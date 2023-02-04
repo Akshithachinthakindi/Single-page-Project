@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+            <span onmouseenter="hoverEnter(0)">
+                 <i class="fa fa-smile-o "></i>
+            </span>
+            </li>
+
+            <li>
+                <span onmouseenter="hoverEnter(1)">
+                     <i class="fa fa-plane "></i>
+                </span>
+             </li>
+            <li>
+                 <span onmouseenter="hoverEnter(2)">
+                      <i class="fa fa-globe  "></i>
+                  </span>
+            </li>
+            <li>
+                <span onmouseenter="hoverEnter(3)">
+                     <i class="fa fa-map-marker  "></i>
+                </span>
+             </li>
+             <li>
+                <span onmouseenter="hoverEnter(4)">
+                     <i class="fa fa-cutlery   "></i>
+                </span>
+             </li>
+             <li>
+                <span onmouseenter="hoverEnter(5)">
+                     <i class="fa fa-heartbeat"></i>
+                </span>
+             </li>
+             <li>
+                <span onmouseenter="hoverEnter(6)">
+                     <i class="fa fa-hourglass "></i>
+                </span>
+             </li>
+            
+            
+             <span class="goo-index" id="goo-index"></span>
+        </ul>
+    </div>
+    <div class="content-wrapper">
+        <div id="screen_0" class="screen visible">
+            <h2>KEEP CALM AND HAPPY</h2>
+            <p>Scientific evidence suggests that being happy may have major benefits for your health. For starters, being happy promotes a healthy lifestyle. It may also help combat stress, boost your immune system, protect your heart and reduce pain. What's more, it may even increase your life expectancy</p>
+            <div class="image" style="background-image: url(img1.jfif);">
+
+            </div>
+        </div>
+        <div id="screen_1" class="screen visible">
+            <h2>KEEP TRAVELLING</h2>
+            <p>Every destination has something unique to teach visitors, and immersing themselves in a completely different world is the best learning experience. People may travel to learn something specific: a new language, a new cuisine, aspects of a different culture, or a deeper appreciation of faith or spirituality</p>
+            <div class="image" style="background-image: url(img2.jfif);">
+
+            </div>
+        </div>
+        <div id="screen_2" class="screen visible">
+            <h2>EXPLORING MAKES YOU HAPPY</h2>
+            <p>Too much stress isn't good for your mental health and taking a break once in awhile can protect you from further mental health issues, such as depression. Visiting new places is also a great way to keep your brain active. When you're young, you're learning all the time.</p>
+            <div class="image" style="background-image: url(img3.jfif);">
+
+            </div>
+        </div>
+      
+        <div id="screen_3" class="screen visible">
+            <h2>BEAUTIFUL PLACES</h2>
+            <p>Travel provides a fantastic opportunity for you to learn many new things. Yes, you gain knowledge from travel guides, and you may be able to visualize what you are reading about but nothing compares to actually feeling the sun on your face or the snow in your hair. When you experience standing on the soil, looking at the things of those you read about, the experience is exhilarating and irreplaceable.</p>
+            <div class="image" style="background-image: url(img4.jfif);">
+
+            </div>
+        </div>
+        <div id="screen_4" class="screen visible">
+            <h2>EAT HEALTHY</h2>
+            <p>A healthy diet is essential for good health and nutrition. It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and cancer. Eating a variety of foods and consuming less salt, sugars and saturated and industrially-produced trans-fats, are essential for healthy diet.</p>
+            <div class="image" style="background-image: url(img5.jfif);">
+
+            </div>
+        </div><div id="screen_5" class="screen visible">
+            <h2>EXERCISE REGULARLY</h2>
+            <p>Physical activity or exercise can improve your health and reduce the risk of developing several diseases like type 2 diabetes, cancer and cardiovascular disease. Physical activity and exercise can have immediate and long-term health benefits. Most importantly, regular activity can improve your quality of life.</p>
+            <div class="image" style="background-image: url(img6.jfif);">
+
+            </div>
+        </div><div id="screen_6" class="screen visible">
+            <h2>SLEEP ENOUGH</h2>
+            <p>Sleep is a vital, often neglected, component of every person's overall health and well-being. Sleep is important because it enables the body to repair and be fit and ready for another day. Getting adequate rest may also help prevent excess weight gain, heart disease, and increased illness duration.</p>
+            <div class="image" style="background-image: url(img7.jfif);">
+
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        let gooIndex=document.getElementById('goo-index');
+        let hoverEnter=index =>{
+            gooIndex.style.top=100*index+'px';
+            let allScreens=document.querySelectorAll('.screen')
+            allScreens.forEach(e => {
+                e.classList.remove('visible')
+            });
+            let nowVisible=document.getElementById('screen_'+index);
+            nowVisible.classList.add('visible');
+        };
+    </script>
+
+
+</body>
+</html>
